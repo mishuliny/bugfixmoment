@@ -168,13 +168,9 @@
 
 
 /mob/living/silicon/ai/Destroy()
-	GLOB.ai_list -= src
-	GLOB.shuttle_caller_list -= src
-	SSshuttle.autoEvac()
-	qdel(eyeobj) // No AI, no Eye
-	malfhack = null
+	
 
-	. = ..()
+	
 
 /mob/living/silicon/ai/IgniteMob()
 	fire_stacks = 0
